@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    flex: 1;
+    font-size: 1.8em;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#wrapper {
+    width: 600px;
+    margin: auto;
+}
+
+#scoreboard {
+    display: flex;
+}
+
+#scoreboard .player {
+    flex: 1;
+    padding: 4px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#gameboard {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+}
+
+#gameboard .square {
+    width: 175px;
+    height: 175px;
+    margin: 3px;
+    border: 2px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 100px;
+}
+
+#gameboard .square--active {
+    border: 2px solid rgba(0, 0, 0, .7);
+}
+
+#gameboard .square--active:hover {
+    cursor: pointer;
+    border: 2px solid green;
+}
+
+#gameboard .square--X {
+    color: red;
+}
+
+#gameboard .square--O {
+    color: green;
+}
+
+.is_turn {
+    border: 2px solid red;
+    border-radius: 3px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+#btn-X {
+    background-color: red;
+    color: white;
+}
+
+#btn-O {
+    background-color: green;
+}
+
+#btn-nw {
+    background-color: #3875d7;
+    flex: 2;
+}
